@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги — Стоматология «Aurora»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cssstyles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="На главную" style="display:flex; align-items:center; gap:8px;">
+        <img src="img/logo.png" alt="Aurora" style="height: 50px;">
+        <span class="logo-text">Aurora<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Открыть меню">
+          <span class="nav-icon"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="index.html" class="nav-link active">Главная</a></li>
+          <li><a href="about.html" class="nav-link">О клинике</a></li>
+          <li><a href="services.html" class="nav-link">Услуги</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
+        <a href="#appointment" class="btn btn-glow">Записаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Наши услуги</h1>
+        <p style="text-align:center; max-width:760px; margin:0 auto 3.5rem; color:var(--text-muted); font-size:1.25rem;">
+          Нажмите на карточку, чтобы раскрыть подробное описание
+        </p>
+
+        <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap:2.2rem;">
+
+          <!-- 1. Эстетика улыбки -->
+          <details id="esthetic" class="premium-card" style="cursor:pointer;">
+            <summary style="list-style:none; padding:2.2rem 2.4rem 1.4rem;">
+              <span style="font-size:3.8rem; display:block; margin-bottom:1.2rem;">✨</span>
+              <h3 style="font-size:1.65rem;">Эстетика улыбки</h3>
+              <p style="color:var(--text-muted);">Виниры, отбеливание, полный дизайн улыбки</p>
+            </summary>
+            <div style="padding:0 2.4rem 2.4rem;">
+              <p>Создаём голливудскую улыбку за 1–2 визита. Цифровое моделирование результата перед началом работ.</p>
+              <ul style="margin:1.6rem 0 2rem; line-height:1.85;">
+                <li>✅ Керамические виниры E-max</li>
+                <li>✅ Лазерное и ультразвуковое отбеливание Beyond</li>
+                <li>✅ Полный дизайн улыбки</li>
+                <li>✅ Максимально естественный результат</li>
+              </ul>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:var(--gold); font-weight:600; font-size:1.35rem;">от 38 000 ₽</span>
+                <a href="contacts.html#appointment" class="btn btn-outline">Записаться</a>
+              </div>
+            </div>
+          </details>
+
+          <!-- 2. Ортодонтия -->
+          <details id="orthodontics" class="premium-card" style="cursor:pointer;">
+            <summary style="list-style:none; padding:2.2rem 2.4rem 1.4rem;">
+              <span style="font-size:3.8rem; display:block; margin-bottom:1.2rem;">🔧</span>
+              <h3 style="font-size:1.65rem;">Ортодонтия</h3>
+              <p style="color:var(--text-muted);">Брекеты, элайнеры Invisalign и Star Smile</p>
+            </summary>
+            <div style="padding:0 2.4rem 2.4rem;">
+              <p>Исправление прикуса у взрослых и детей. Прозрачные элайнеры почти незаметны на зубах.</p>
+              <ul style="margin:1.6rem 0 2rem; line-height:1.85;">
+                <li>✅ Прозрачные элайнеры Invisalign</li>
+                <li>✅ Самолигирующиеся брекеты Damon</li>
+                <li>✅ Срок лечения от 6 месяцев</li>
+                <li>✅ Регулярный контроль каждые 4 недели</li>
+              </ul>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:var(--gold); font-weight:600; font-size:1.35rem;">от 145 000 ₽</span>
+                <a href="contacts.html#appointment" class="btn btn-outline">Записаться на консультацию</a>
+              </div>
+            </div>
+          </details>
+
+          <!-- 3. Терапия и реставрация -->
+          <details id="therapy" class="premium-card" style="cursor:pointer;">
+            <summary style="list-style:none; padding:2.2rem 2.4rem 1.4rem;">
+              <span style="font-size:3.8rem; display:block; margin-bottom:1.2rem;">🦷</span>
+              <h3 style="font-size:1.65rem;">Терапия и реставрация</h3>
+              <p style="color:var(--text-muted);">Лечение кариеса, пульпита, художественная реставрация</p>
+            </summary>
+            <div style="padding:0 2.4rem 2.4rem;">
+              <p>Современное лечение зубов за один визит. Используем только премиальные материалы.</p>
+              <ul style="margin:1.6rem 0 2rem; line-height:1.85;">
+                <li>✅ Лечение кариеса любой сложности</li>
+                <li>✅ Лечение пульпита и периодонтита</li>
+                <li>✅ Художественная реставрация зубов</li>
+                <li>✅ Гарантия на работу — 5 лет</li>
+              </ul>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:var(--gold); font-weight:600; font-size:1.35rem;">от 8 900 ₽</span>
+                <a href="contacts.html#appointment" class="btn btn-outline">Записаться на лечение</a>
+              </div>
+            </div>
+          </details>
+
+          <!-- 4. Имплантация -->
+          <details id="implants" class="premium-card" style="cursor:pointer;">
+            <summary style="list-style:none; padding:2.2rem 2.4rem 1.4rem;">
+              <span style="font-size:3.8rem; display:block; margin-bottom:1.2rem;">⚙️</span>
+              <h3 style="font-size:1.65rem;">Имплантация</h3>
+              <p style="color:var(--text-muted);">Nobel Biocare и Straumann (Швейцария)</p>
+            </summary>
+            <div style="padding:0 2.4rem 2.4rem;">
+              <p>Установка имплантов премиум-класса. Возможна имплантация сразу после удаления зуба.</p>
+              <ul style="margin:1.6rem 0 2rem; line-height:1.85;">
+                <li>✅ Пожизненная гарантия на имплант</li>
+                <li>✅ Цифровое планирование операции</li>
+                <li>✅ Костная пластика при необходимости</li>
+              </ul>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span style="color:var(--gold); font-weight:600; font-size:1.35rem;">от 85 000 ₽</span>
+                <a href="contacts.html#appointment" class="btn btn-outline">Записаться</a>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <span class="footer-logo">Aurora<span class="logo-dot">.</span></span>
+        <p>Премиальная стоматология с 2012 года.<br>Лицензия № ЛО-77-01-012345</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О клинике</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <address>
+          <p>Москва, Пресненская наб., 12</p>
+          <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+          <p><a href="mailto:info@aurora-dental.ru">info@aurora-dental.ru</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Стоматология «Aurora». Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hash = window.location.hash.substring(1); // убираем #
+      if (hash) {
+        const details = document.getElementById(hash);
+        if (details) {
+          details.open = true;           // раскрываем нужную вкладку
+          details.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+    });
+  </script>   
+</body>
+</html>

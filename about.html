@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О клинике — Стоматология «Aurora»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cssstyles.css">
+</head>
+<body>
+
+  <!-- ШАПКА (оставляем как было) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="На главную" style="display:flex; align-items:center; gap:8px;">
+        <img src="img/logo.png" alt="Aurora" style="height: 50px;">
+        <span class="logo-text">Aurora<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Открыть меню">
+          <span class="nav-icon"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="about.html" class="nav-link active">О клинике</a></li>
+          <li><a href="services.html" class="nav-link">Услуги</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
+        <a href="#appointment" class="btn btn-glow">Записаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-alt" style="padding: 6rem 0;">
+      <div class="container">
+        <h1 class="section-title reveal">Клиника, где рождаются улыбки</h1>
+        <img src="img/ulibka.png" alt="Дмитрий Иванов" style="width:100%; border-radius: var(--radius-lg); margin-bottom:1.5rem; aspect-ratio:2/1; object-fit:cover;">
+
+    <!-- НОВАЯ ИСТОРИЯ -->
+    <section class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Наша история</h2>
+        <p style="max-width: 720px; margin: 0 auto 3rem; text-align:center; font-size:1.2rem; color:var(--text-muted);">
+          Aurora была создана в 2012 году как клиника нового поколения — где технологии, комфорт и индивидуальный подход не просто слова, а ежедневная практика.
+        </p>
+      </div>
+    </section>
+
+    <!-- НАША КОМАНДА — ГЛАВНЫЙ БЛОК -->
+    <section id="team" class="section section-alt reveal">
+      <div class="container">
+        <h2 class="section-title">Наша команда</h2>
+        <p style="text-align:center; max-width:680px; margin:0 auto 3rem; color:var(--text-muted);">Врачи, которых выбирают за профессионализм и человеческий подход</p>
+
+        <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          
+          <!-- Врач 1 -->
+          <div class="premium-card" style="text-align:center;">
+            <img src="img/dr-ivanov.png" alt="Дмитрий Иванов" style="width:100%; border-radius: var(--radius-lg); margin-bottom:1.5rem; aspect-ratio:1/1; object-fit:cover;">
+            <h3 style="margin-bottom:0.3rem;">Дмитрий Иванов</h3>
+            <p style="color:var(--accent); font-weight:500; margin-bottom:1rem;">Главный врач • Ортопед • Имплантолог</p>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">
+              Более 18 лет опыта. Обучался в Швейцарии и США. Специалист по тотальной имплантации All-on-4 / All-on-6.
+            </p>
+            <a href="contacts.html#appointment" class="btn btn-outline" style="margin-top:1.5rem;">Записаться к врачу</a>
+          </div>
+
+          <!-- Врач 2 -->
+          <div class="premium-card" style="text-align:center;">
+            <img src="img/dr-petrov.png" alt="Анна Петрова" style="width:100%; border-radius: var(--radius-lg); margin-bottom:1.5rem; aspect-ratio:1/1; object-fit:cover;">
+            <h3 style="margin-bottom:0.3rem;">Анна Петрова</h3>
+            <p style="color:var(--accent); font-weight:500; margin-bottom:1rem;">Ортодонт • Эстетический стоматолог</p>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">
+              Мастер Invisalign Diamond Provider. Более 1200 успешно завершённых кейсов по исправлению прикуса у взрослых.
+            </p>
+            <a href="contacts.html#appointment" class="btn btn-outline" style="margin-top:1.5rem;">Записаться к врачу</a>
+          </div>
+
+          <!-- Врач 3 -->
+          <div class="premium-card" style="text-align:center;">
+            <img src="img/dr-sidorova.png" alt="Елена Сидорова" style="width:100%; border-radius: var(--radius-lg); margin-bottom:1.5rem; aspect-ratio:1/1; object-fit:cover;">
+            <h3 style="margin-bottom:0.3rem;">Елена Сидорова</h3>
+            <p style="color:var(--accent); font-weight:500; margin-bottom:1rem;">Терапевт • Художественная реставрация</p>
+            <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">
+              Специалист по эстетической реставрации. Работает с самыми сложными случаями изменения цвета и формы зубов.
+            </p>
+            <a href="contacts.html#appointment" class="btn btn-outline" style="margin-top:1.5rem;">Записаться к врачу</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies" class="section section-alt" style="padding: 6rem 0;">
+      <div class="container">
+        <h1 class="section-title reveal">Мы - передовые технологии</h1>
+        
+        <div class="showcase-grid">
+          <div class="showcase-text reveal">
+            <p style="font-size:1.35rem; line-height:1.7; color:var(--text-muted);">
+              С 2012 года мы не просто лечим зубы.<br>
+              <strong style="color:var(--text);">Мы создаём уверенность и красоту мирового уровня.</strong>
+            </p>
+            <ul class="check-list" style="margin-top:2.5rem; font-size:1.15rem;">
+              <li>Технологии 2026 года уже сегодня:</li>
+              <li>Primescan</li>
+              <li>Epic X</li>
+              <li>ИИ-диагностика</li>
+              <li>3D-печать</li>
+              </li>роботизированная имплантация</li>
+            </ul>
+            <a href="contacts.html#appointment" class="btn btn-glow" style="margin-top:3rem; padding:1rem 2.8rem; font-size:1.1rem;">
+              Записаться на бесплатную диагностику
+            </a>
+          </div>
+          
+          <div class="showcase-media reveal">
+            <video autoplay muted loop playsinline preload="metadata" src="video/clinic-tour.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕННОСТИ (по желанию можно убрать) -->
+    <section id="comfort" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Наши ценности</h2>
+        <div class="features-grid">
+          <article class="premium-card">
+            <h3>Индивидуальность</h3>
+            <p>Каждый пациент получает персональный план лечения, а не «шаблонное» решение.</p>
+          </article>
+          <article class="premium-card">
+            <h3>Прозрачность</h3>
+            <p>Фиксированная стоимость и полная информация на каждом этапе лечения.</p>
+          </article>
+          <article class="premium-card">
+            <h3>Без компромиссов</h3>
+            <p>Только премиум-материалы и оборудование последнего поколения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ (оставляем как было) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <span class="footer-logo">Aurora<span class="logo-dot">.</span></span>
+        <p>Премиальная стоматология с 2012 года.<br>Лицензия № ЛО-77-01-012345</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О клинике</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <address>
+          <p>Москва, Пресненская наб., 12</p>
+          <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+          <p><a href="mailto:info@aurora-dental.ru">info@aurora-dental.ru</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Стоматология «Aurora». Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

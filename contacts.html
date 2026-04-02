@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты и запись в стоматологию Aurora">
+  <title>Контакты — Стоматология «Aurora»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cssstyles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="На главную" style="display:flex; align-items:center; gap:8px;">
+        <img src="img/logo.png" alt="Aurora" style="height: 50px;">
+        <span class="logo-text">Aurora<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Открыть меню">
+          <span class="nav-icon"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="index.html" class="nav-link active">Главная</a></li>
+          <li><a href="about.html" class="nav-link">О клинике</a></li>
+          <li><a href="services.html" class="nav-link">Услуги</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
+        <a href="#appointment" class="btn btn-glow">Записаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="appointment">
+      <div class="container appointment-grid">
+        <div class="appointment-info">
+          <h2>Как нас найти</h2>
+          <address class="contact-preview" style="font-size:1.1rem;">
+            <p>📍 Москва, Пресненская наб., 12 (Башня Федерация)</p>
+            <p>🕒 Пн–Пт: 9:00–21:00 Сб: 10:00–18:00</p>
+            <p>📞 <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+            <p>✉️ <a href="mailto:info@aurora-dental.ru">info@aurora-dental.ru</a></p>
+          </address>
+
+          <!-- ЯНДЕКС КАРТА -->
+          <iframe 
+            src="https://yandex.ru/maps/213/moscow/?ll=37.537434%2C55.749633&z=16&pt=37.537434%2C55.749633&mode=whatshere&source=constructor" 
+            width="100%" 
+            height="380" 
+            frameborder="0" 
+            style="border:0; border-radius:16px; margin-top:2rem;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+
+          <a href="index.html" class="btn btn-outline" style="margin-top:2rem; display:inline-flex; align-items:center; gap:0.5rem;">
+            ← Вернуться на главную
+          </a>
+        </div>
+
+        <!-- Форма -->
+        <form class="premium-form" action="#" method="POST" aria-label="Форма записи">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required placeholder="Алексей">
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите направление</option>
+              <option value="therapy">Терапия</option>
+              <option value="orthodontics">Ортодонтия</option>
+              <option value="implants">Имплантация</option>
+              <option value="esthetic">Эстетика</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-glow btn-block">Записаться на приём</button>
+          
+          <p class="form-note" style="margin-top:1rem; font-size:0.9rem; color:var(--text-muted);">
+            Нажимая кнопку, вы соглашаетесь с <a href="#" style="color:var(--accent);">политикой конфиденциальности</a> и обработкой персональных данных
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал (оставляем как был) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <span class="footer-logo">Aurora<span class="logo-dot">.</span></span>
+        <p>Премиальная стоматология с 2012 года.<br>Лицензия № ЛО-77-01-012345</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О клинике</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <address>
+          <p>Москва, Пресненская наб., 12</p>
+          <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+          <p><a href="mailto:info@aurora-dental.ru">info@aurora-dental.ru</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Стоматология «Aurora». Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

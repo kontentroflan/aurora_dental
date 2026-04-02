@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Премиальная стоматология Aurora — эстетика, технологии и безупречный сервис">
+  <title>Стоматология «Aurora» — Премиум лечение в Москве</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="cssstyles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="На главную" style="display:flex; align-items:center; gap:8px;">
+        <img src="img/logo.png" alt="Aurora" style="height: 50px;">
+        <span class="logo-text">Aurora<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Открыть меню">
+          <span class="nav-icon"></span>
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="index.html" class="nav-link active">Главная</a></li>
+          <li><a href="about.html" class="nav-link">О клинике</a></li>
+          <li><a href="services.html" class="nav-link">Услуги</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+74951234567" class="phone-link">+7 (495) 123-45-67</a>
+        <a href="#appointment" class="btn btn-glow">Записаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ГЕРОЙ -->
+    <section class="hero-video">
+      <video autoplay muted loop playsinline preload="metadata" poster="img/hero-fallback.jpg">
+        <source src="video/dental-hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      
+      <div class="container hero-content reveal">
+        <h1>Ваша улыбка —<br>наше искусство</h1>
+        <p class="hero-subtitle">Премиальная стоматология с кинематографичным вниманием к деталям. Без боли. Без компромиссов.</p>
+        <div class="hero-actions">
+          <a href="contacts.html#appointment" class="btn btn-glow">Записаться на приём</a>
+          <a href="services.html" class="btn btn-outline">Наши услуги</a>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator" aria-hidden="true">↓</div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="premium-features section reveal">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают <span class="accent-text">Aurora</span></h2>
+        <div class="features-grid">
+
+          <a href="about.html#team" class="premium-card" style="display:block; text-decoration:none; color:inherit;">
+            <h3>👨‍⚕️ Врачи-эксперты</h3>
+            <p>Стаж от 12 лет. Международные сертификаты. Постоянное обучение в Европе.</p>
+          </a>
+
+          <a href="about.html#technologies" class="premium-card" style="display:block; text-decoration:none; color:inherit;">
+            <h3>🔬 Технологии 2026</h3>
+            <p>3D-сканирование Primescan, лазерная хирургия Epic X, ИИ-диагностика, цифровые слепки без дискомфорта и 3D-печать коронок за 1 час.</p>
+          </a>
+
+          <a href="about.html#comfort" class="premium-card" style="display:block; text-decoration:none; color:inherit;">
+            <h3>🛋️ Комфорт уровня 5+</h3>
+            <p>Приватные кабинеты, премиум-материалы, персональный куратор 24/7 и атмосфера, в которой забываешь, что ты в клинике.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ВИДЕО "О НАС" -->
+    <section class="video-showcase section reveal section-alt">
+      <div class="container showcase-grid">
+        <div class="showcase-text">
+          <h2>Клиника, где время работает на вас</h2>
+          <p>Мы не лечим зубы. Мы создаём уверенность. Каждый протокол лечения разрабатывается индивидуально.</p>
+          <ul class="check-list">
+            <li>✅ Персональный план лечения в день обращения</li>
+            <li>✅ Фиксированная стоимость без скрытых платежей</li>
+            <li>✅ Гарантия до 7 лет на все виды работ</li>
+          </ul>
+          <a href="about.html" class="link-arrow">Подробнее о клинике →</a>
+        </div>
+          <div class="showcase-media">
+            <video 
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            source src="video/wwww.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ (обновлённый порядок) -->
+    <section class="services-preview section reveal">
+      <div class="container">
+        <h2 class="section-title">Направления лечения</h2>
+        <div class="services-grid">
+          <a href="services.html#esthetic" class="service-card">
+            <span class="service-icon">✨</span>
+            <h3>Эстетика улыбки</h3>
+            <p>Виниры, отбеливание, дизайн улыбки</p>
+          </a>
+          <a href="services.html#orthodontics" class="service-card">
+            <span class="service-icon">🔧</span>
+            <h3>Ортодонтия</h3>
+            <p>Брекеты, элайнеры, исправление прикуса</p>
+          </a>
+          <a href="services.html#therapy" class="service-card">
+            <span class="service-icon">🦷</span>
+            <h3>Терапия и реставрация</h3>
+            <p>Лечение кариеса, пульпита, реставрация</p>
+          </a>
+          <a href="services.html#implants" class="service-card">
+            <span class="service-icon">⚙️</span>
+            <h3>Имплантация</h3>
+            <p>Nobel Biocare, Straumann</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА ЗАПИСИ -->
+    <section class="appointment section reveal section-alt" id="appointment">
+      <div class="container appointment-grid">
+        <div class="appointment-info">
+          <h2>Запишитесь на диагностику</h2>
+          <p>Бесплатный 3D-скан + план лечения в день обращения. Мы свяжемся в течение 15 минут.</p>
+          <address class="contact-preview">
+            <p>📍 Москва, Пресненская наб., 12</p>
+            <p>🕒 Пн–Пт: 9:00–21:00</p>
+            <p>📞 <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+          </address>
+        </div>
+        <form class="premium-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required placeholder="Алексей">
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form-group">
+            <label for="service">Услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите направление</option>
+              <option value="esthetic">Эстетика улыбки</option>
+              <option value="orthodontics">Ортодонтия</option>
+              <option value="therapy">Терапия и реставрация</option>
+              <option value="implants">Имплантация</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-glow btn-block">Отправить заявку</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <span class="footer-logo">Aurora<span class="logo-dot">.</span></span>
+        <p>Премиальная стоматология с 2012 года. Лицензия № ЛО-77-01-012345</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О клинике</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <address>
+          <p>Москва, Пресненская наб., 12</p>
+          <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+          <p><a href="mailto:info@aurora-dental.ru">info@aurora-dental.ru</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Стоматология «Aurora». Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
