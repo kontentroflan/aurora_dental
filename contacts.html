@@ -51,16 +51,14 @@
 
           <!-- ЯНДЕКС КАРТА -->
           <div style="margin-top: 2rem;">
-            <iframe 
-              src="https://yandex.ru/maps/213/moscow/?ll=37.537434%2C55.749633&amp;z=16&amp;pt=37.537434%2C55.749633&amp;mode=whatshere"
-              width="100%" 
-              height="420" 
-              frameborder="0" 
-              style="border:0; border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" 
-              allowfullscreen="" 
-              loading="lazy">
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+              <script 
+                type="text/javascript" 
+                charset="utf-8" 
+                async 
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1aa6bc63523bf6b4f1fbbe2e6fadb1b274d4f93ca8699f72f5203f1a6e0699da&amp;width=100%25&amp;height=420&amp;lang=ru_RU&amp;scroll=true">
+              </script>
+            </div>
           </div>
 
           <a href="index.html" class="btn btn-outline" style="margin-top:2rem; display:inline-flex; align-items:center; gap:0.5rem;">
